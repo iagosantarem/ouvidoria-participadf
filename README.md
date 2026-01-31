@@ -1,30 +1,148 @@
-# Mobile user experience adjustments
+# 🏛️ Participa DF – Ouvidoria Cidadã
 
-*Automatically synced with your [v0.app](https://v0.app) deployments*
+Protótipo funcional desenvolvido para o **1º Hackathon em Controle Social – Desafio Participa DF**, com o objetivo de simplificar e ampliar a participação cidadã na Ouvidoria do Governo do Distrito Federal.
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/iagosouzayt-gmailcoms-projects/v0-participadf)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.app-black?style=for-the-badge)](https://v0.app/chat/gqeEA2uO4QL)
+O projeto propõe uma experiência digital **simples, acessível e inclusiva**, permitindo que qualquer cidadão registre uma manifestação de forma rápida e segura, inclusive usuários com baixa familiaridade digital.
 
-## Overview
+---
 
-This repository will stay in sync with your deployed chats on [v0.app](https://v0.app).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.app](https://v0.app).
+## 🎯 Objetivo
 
-## Deployment
+Facilitar o registro de:
 
-Your project is live at:
+* Reclamações
+* Denúncias
+* Sugestões
+* Elogios
 
-**[https://vercel.com/iagosouzayt-gmailcoms-projects/v0-participadf](https://vercel.com/iagosouzayt-gmailcoms-projects/v0-participadf)**
+Por meio de uma aplicação:
 
-## Build your app
+* 📱 Mobile-first
+* ♿ Acessível (WCAG 2.1 AA)
+* 🎤 Multicanal (texto, áudio, imagem e vídeo)
+* 🔐 Com anonimato opcional
+* 📄 Com geração automática de protocolo
 
-Continue building your app on:
+---
 
-**[https://v0.app/chat/gqeEA2uO4QL](https://v0.app/chat/gqeEA2uO4QL)**
+## ✨ Funcionalidades
 
-## How It Works
+### 🎤 Modo Rápido por Voz
 
-1. Create and modify your project using [v0.app](https://v0.app)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+Permite que o cidadão apenas fale sua manifestação.
+O sistema realiza a transcrição automática, sugere o assunto com base em palavras-chave e gera o protocolo.
+
+### 🗂️ Triagem por Assunto
+
+O cidadão escolhe o problema, não o órgão.
+O sistema sugere automaticamente o encaminhamento adequado.
+
+### 📎 Multicanalidade
+
+Envio por:
+
+* Texto
+* Áudio
+* Imagem
+* Vídeo
+
+### 📄 Geração de Protocolo
+
+Cada manifestação gera um número único no formato:
+
+```
+DF-YYYYMMDD-XXXXXX
+```
+
+### 📊 Painel de Protocolos (Demonstração)
+
+Página pública demonstrativa que exibe:
+
+* Protocolo
+* Assunto
+* Órgão sugerido
+* Canal utilizado
+* Data do registro
+
+Não exibe dados pessoais.
+
+---
+
+## ♿ Acessibilidade (WCAG 2.1 AA)
+
+O projeto implementa:
+
+* Contraste adequado de cores
+* Navegação completa por teclado
+* Foco visível em elementos interativos
+* Labels e aria-labels apropriados
+* Mensagens com aria-live
+* Linguagem simples e orientativa
+
+---
+
+## 🔐 Privacidade
+
+* Anonimato opcional
+* Não exibição de dados pessoais no painel
+* Projeto demonstrativo, sem armazenamento persistente real
+
+---
+
+## 🧱 Tecnologias Utilizadas
+
+* Next.js
+* TypeScript
+* Tailwind CSS
+* Progressive Web App (PWA)
+* APIs nativas do navegador (MediaRecorder, Speech Recognition quando disponível)
+
+---
+
+## ▶️ Como rodar o projeto
+
+```bash
+npm install
+npm run dev
+```
+
+A aplicação estará disponível em:
+
+```
+http://localhost:3000
+```
+
+---
+
+## 🧠 Arquitetura
+
+* Interface (Front-end)
+* Camada de serviços para envio (mock)
+* Geração automática de protocolo
+* Classificação por palavras-chave
+* Persistência local para demonstração
+
+Preparado para futura integração com o Participa DF e sistemas internos.
+
+---
+
+## 🤖 Uso de Inteligência Artificial
+
+Foram utilizadas ferramentas de apoio ao desenvolvimento, incluindo geração assistida de código, com foco na aceleração da prototipação.
+
+As decisões de UX, fluxos, regras de triagem e arquitetura foram definidas pelos autores do projeto.
+
+---
+
+## ⚠️ Observações
+
+Este projeto é um **protótipo funcional**, desenvolvido exclusivamente para fins de demonstração no hackathon.
+Não representa ambiente de produção.
+
+---
+
+## 🎬 Demonstração
+
+Link do vídeo demonstrativo:
+(https://drive.google.com/file/d/13EfqWRw0FhWzgZ_Jtp7yAvd0Xgo6wTnB/view?usp=drive_link)
+
